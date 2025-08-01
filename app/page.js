@@ -1,20 +1,14 @@
+// app/page.jsx
+import Link from "next/link";
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>Welcome to My Credit Repair App</h1>
-      <a href="/apply">
-        <button style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          backgroundColor: '#0070f3',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer'
-        }}>
-          Apply Now
-        </button>
-      </a>
+    <main className="p-6 max-w-4xl mx-auto grid gap-6">
+      <h1 className="text-3xl font-bold">Welcome to My Credit Repair App</h1>
+      <Link href="/apply" className="inline-block bg-blue-600 text-white px-4 py-2 rounded mt-4">
+        Apply Now
+      </Link>
     </main>
   );
 }
+
